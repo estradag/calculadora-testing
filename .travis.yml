@@ -16,3 +16,4 @@ script:
     - coverage run --branch TestCalculadora.py
     - cd ..
     - lettuce
+    - echo "Ya no me deja hacer push :("
