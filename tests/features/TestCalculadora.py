@@ -58,15 +58,15 @@ class CalculadoraTest(unittest.TestCase):
                             'Elevar el uno a la X potencia siempre sera uno')
 
     def test_raiz_cuadrada_de_144_es_12(self):
-        self.calc.raiz(144, 2)
+        self.calc.raiz(2, 144)
         self.assertEquals(self.calc.obtener_resultado(), 12.0)
 
     def test_raiz_numero_negativo_igual_error(self):
-        self.assertEquals(self.calc.raiz(-100, 2),
+        self.assertEquals(self.calc.raiz(2, -100),
                             'No se puede obtener la raiz de un numero negativo')
 
     def test_raiz_0_igual_error(self):
-        self.assertEquals(self.calc.raiz(100, 0),
+        self.assertEquals(self.calc.raiz(0, 100),
                             'No es posible obtener una raiz cero')
 
     def tearDown(self):
