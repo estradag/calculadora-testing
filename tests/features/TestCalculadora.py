@@ -63,7 +63,7 @@ class CalculadoraTest(unittest.TestCase):
 
     def test_raiz_numero_negativo_igual_error(self):
         self.assertEquals(self.calc.raiz(-100, 2),
-                            'No se puede obtener la raiz de un número negativo')
+                            'No se puede obtener la raiz de un numero negativo')
 
     def test_raiz_0_igual_error(self):
         self.assertEquals(self.calc.raiz(100, 0),

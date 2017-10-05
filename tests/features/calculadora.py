@@ -45,4 +45,4 @@ class Calculadora():
         elif num2 == 0:
             return 'No es posible obtener una raiz cero'
         else:
-            self.resultado = num2 ** (1.0 / num1)
+            self.resultado = num1 ** (1.0 / num2)
