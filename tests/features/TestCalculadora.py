@@ -40,14 +40,14 @@ class CalculadoraTest(unittest.TestCase):
 
     def test_numX_por_1_no_tiene_caso(self):
         self.assertEquals(self.calc.multiplicar(7, 1),
-                            'No tiene caso multiplicar por uno, sabes el resultado')
+                            'N multiplicado por uno siempre sera n')
 
     def test_dividir_10_entre_2_igual_a_5(self):
         self.calc.dividir(10, 2)
         self.assertEquals(self.calc.obtener_resultado(), 5)
 
     def test_dividir_numX_entre_0_igual_error(self):
-        self.assertEquals(self.calc.dividir(25, 0), 'Indeterminación')
+        self.assertEquals(self.calc.dividir(25, 0), 'Indeterminacion')
 
     def test_elevar_2_a_5_igual_32(self):
         self.calc.potencia(2, 5)
@@ -55,7 +55,7 @@ class CalculadoraTest(unittest.TestCase):
 
     def test_elevar_1_a_5_no_tiene_caso(self):
         self.assertEquals(self.calc.potencia(1, 5),
-                            'No tiene caso elevar el uno a la X potencia, siempre será uno')
+                            'Elevar el uno a la X potencia siempre sera uno')
 
     def test_raiz_cuadrada_de_144_es_12(self):
         self.calc.raiz(144, 2)
@@ -63,11 +63,11 @@ class CalculadoraTest(unittest.TestCase):
 
     def test_raiz_numero_negativo_igual_error(self):
         self.assertEquals(self.calc.raiz(-100, 2),
-                            'No se puede obtener la raíz de un número negativo')
+                            'No se puede obtener la raiz de un número negativo')
 
     def test_raiz_0_igual_error(self):
         self.assertEquals(self.calc.raiz(100, 0),
-                            'No es posible obtener una raíz cero')
+                            'No es posible obtener una raiz cero')
 
     def tearDown(self):
         pass
