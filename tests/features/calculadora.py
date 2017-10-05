@@ -40,9 +40,9 @@ class Calculadora():
             self.resultado = num1 ** num2
 
     def raiz(self, num1, num2):
-        if num2 < 0:
-            return 'No se puede obtener la raiz de un número negativo'
-        elif num1 == 0:
+        if num1 < 0:
+            return 'No se puede obtener la raiz de un numero negativo'
+        elif num2 == 0:
             return 'No es posible obtener una raiz cero'
         else:
             self.resultado = num2 ** (1.0 / num1)
